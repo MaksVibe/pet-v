@@ -1,4 +1,6 @@
-@import "./svg";
-@import "./header";
-@import "./hero";
-@import "./footer";
+@import "./utils//svg";
+@import "./base/reset";
+@import "./base/common";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/footer";

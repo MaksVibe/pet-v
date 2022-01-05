@@ -1,0 +1,50 @@
+body {
+  background-color: var(--main-bg-text);
+  color: var(--main-bg-text);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  // gap: $card-set-gap;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  // @media screen and (min-width: 1200px) {
+  //   padding-bottom: $padding;
+  //   padding-top: $padding;
+  // }
+  margin: 0 auto;
+}
+
+.text {
+  color: var(--second-text-btnbg);
+  line-height: calc(24 / 14);
+}
