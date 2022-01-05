@@ -1,6 +1,6 @@
 .footer {
   color: var(--second-text-btnbg);
-  padding: 24px 0;
+  padding: 24px 0 0;
 
   // Registration form
   &__form {
@@ -88,5 +88,6 @@
   &__copyright {
     font-size: 12px;
     text-align: center;
+    padding-bottom: 24px;
   }
 }
