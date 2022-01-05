@@ -16,23 +16,51 @@ Single-colored icons can be modified like so:
 ========================================== */
 
 .icon-basket {
-  width: 0.6669921875em;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 16px;
+  height: 24px;
 }
 
-.icon-snapchat {
-  width: 1.0556640625em;
+.icon-search {
+  position: absolute;
+  left: 52px;
+  width: 18px;
+  height: 18px;
 }
 
-.icon-facebook {
-  width: 0.5263671875em;
+.icon-menu-burger {
+  position: absolute;
+  top: 22px;
+  left: 16px;
+  width: 20px;
+  height: 15px;
 }
 
-.icon-youtube {
-  width: 1.400390625em;
+.icon-insta {
+  width: 19px;
+  height: 19px;
 }
 
 .icon-twitter {
-  width: 1.25em;
+  width: 20px;
+  height: 16px;
+}
+
+.icon-snapchat {
+  width: 19px;
+  height: 18px;
+}
+
+.icon-facebook {
+  width: 10px;
+  height: 19px;
+}
+
+.icon-youtube {
+  width: 21px;
+  height: 15px;
 }
 
 .icon-chevrondown {
@@ -41,20 +69,4 @@ Single-colored icons can be modified like so:
 
 .icon-chevrondown1 {
   width: 0.5830078125em;
-}
-
-.icon-search {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-basket {
-  width: 16px;
-  height: 24px;
-}
-
-.icon-menu-burger {
-  width: 20px;
-  height: 15px;
-  margin-right: 16px;
 }

@@ -1,0 +1,92 @@
+.footer {
+  color: var(--second-text-btnbg);
+  padding: 24px 0;
+
+  // Registration form
+  &__form {
+    padding: 0 16px 24px;
+
+    &-text {
+      font-size: 12px;
+      margin-bottom: 14px;
+      line-height: calc(18 / 12);
+      letter-spacing: 0.072em;
+    }
+
+    &-wrapper {
+      display: flex;
+      gap: 8px;
+    }
+
+    &-input {
+      width: 100%;
+      height: 32px;
+      border: 1px solid var(--main-border);
+      border-radius: 3px;
+      padding-left: 11px;
+
+      font-size: 11px;
+      line-height: calc(16 / 11);
+      letter-spacing: 0.072em;
+
+      &::placeholder {
+        color: var(--third-text);
+      }
+    }
+
+    &-button {
+      width: 100%;
+      max-width: 96px;
+      border-radius: 3px;
+
+      background-color: var(--second-text-btnbg);
+      color: var(--main-bg-text);
+
+      font-size: 10px;
+      font-weight: 600;
+      line-height: calc(20 / 10);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &__wrapper {
+    background-color: var(--second-bgc);
+    padding: 0 16px;
+  }
+
+  // Navigation menu items
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    gap: 12px;
+
+    font-size: 16px;
+    line-height: calc(18.5 / 16);
+    letter-spacing: 0.0725em;
+
+    &--link {
+      font-family: "Cormorant Garamond";
+    }
+
+    &--item {
+      padding: 0 16px 14px;
+      border-bottom: 1px solid var(--main-border);
+    }
+  }
+
+  // Network's hrefs
+  &__networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+  }
+
+  &__copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}

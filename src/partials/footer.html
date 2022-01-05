@@ -1,20 +1,34 @@
-<footer>
-  <div class="container">
-    <p>
+<footer class="footer">
+  <form action="submit" class="footer__form">
+    <p class="footer__form-text">
       New arrivals. Exclusive previews. First access to sales. Sign up to stay
       in the know.
     </p>
-    <input type="text" />
-    <button>Register</button>
-  </div>
-  <nav>
-    <ul>
-      <li><a>About Us</a></li>
-      <li><a>Categories</a></li>
-      <li><a>Help</a></li>
-      <li><a>Payments & Delivery</a></li>
+    <div class="footer__form-wrapper">
+      <input
+        type="text"
+        class="footer__form-input"
+        placeholder="Your email address"
+      />
+      <button class="footer__form-button">Register</button>
+    </div>
+  </form>
+  <div class="footer__wrapper">
+    <ul class="footer__nav-list">
+      <li class="footer__nav-list--item">
+        <a class="footer__nav-list--link">About Us</a>
+      </li>
+      <li class="footer__nav-list--item">
+        <a class="footer__nav-list--link">Categories</a>
+      </li>
+      <li class="footer__nav-list--item">
+        <a class="footer__nav-list--link">Help</a>
+      </li>
+      <li class="footer__nav-list--item">
+        <a class="footer__nav-list--link">Payments & Delivery</a>
+      </li>
     </ul>
-    <ul>
+    <ul class="footer__networks">
       <li>
         <svg class="icon icon-insta">
           <use href="./images/sprite.svg#icon-insta"></use>
@@ -41,6 +55,8 @@
         </svg>
       </li>
     </ul>
-  </nav>
-  <p>© Copyright, AELTC 2019. All Rights reserved.</p>
+    <p class="footer__copyright">
+      © Copyright, AELTC 2019. All Rights reserved.
+    </p>
+  </div>
 </footer>

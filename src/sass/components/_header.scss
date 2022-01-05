@@ -1,9 +1,29 @@
 .header {
+  width: 100%;
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
   background: linear-gradient(
     180deg,
     rgba(51, 51, 51, 0.389314) 0%,
     rgba(21, 21, 21, 0.209901) 33.39%,
     rgba(0, 0, 0, 0.0001) 95.04%
   );
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 480px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  &__logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 0.854;
+    letter-spacing: 0.07em;
+  }
 }
