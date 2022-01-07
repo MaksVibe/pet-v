@@ -101,6 +101,15 @@ body.show-modal .mobile-menu {
   }
 }
 
+.close_btn::before {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  content: url(../images/close.svg);
+  background-size: contain;
+  color: var(--second-text-btnbg);
+}
+
 .mobile-menu a {
   color: var(--second-text-btnbg);
 }
