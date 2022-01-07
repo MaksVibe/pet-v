@@ -58,12 +58,16 @@
     justify-content: center;
 
     max-width: 1400px;
-    padding-top: 20px;
-    padding-bottom: 32px;
+    padding: 20px 16px 32px;
     margin: 0 auto;
 
+    // @media screen and (min-width: 768px) {
+    //   justify-content: center;
+    // }
+
     @media screen and (min-width: 768px) {
-      justify-content: space-between;
+      padding-left: 24px;
+      padding-right: 24px;
     }
   }
 
@@ -72,9 +76,77 @@
     font-weight: 700;
     line-height: 0.854;
     letter-spacing: 0.07em;
+    text-shadow: var(--txt-shadow);
 
     @media screen and (min-width: 768px) {
-      text-align: left;
+      position: absolute;
+      left: 24px;
     }
   }
+
+  &__navSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    max-width: 70%;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1040px) {
+      max-width: 640px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    margin: 0 auto;
+
+    &-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+
+      background-color: transparent;
+    }
+  }
+
+  &__input {
+    padding: 16px;
+    border-radius: 3px;
+    height: 48px;
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: calc(16 / 11);
+    letter-spacing: 0.073em;
+    color: var(--main-bg-text);
+    background-color: var(--input-bg);
+
+    &::-webkit-input-placeholder {
+      color: var(--main-bg-text);
+    }
+
+    @media screen and (max-width: 1039px) {
+      width: 380px;
+    }
+
+    @media screen and (min-width: 1040px) {
+      width: 584px;
+    }
+  }
+
+  &__nav-list {
+    display: inline-flex;
+    justify-content: center;
+    gap: 32px;
+    text-shadow: var(--second-txt-shadow);
+  }
+}
+
+.header a {
+  color: var(--main-bg-text);
+  text-transform: uppercase;
 }
