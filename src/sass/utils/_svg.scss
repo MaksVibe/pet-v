@@ -25,6 +25,14 @@ Single-colored icons can be modified like so:
   top: 16px;
   width: 16px;
   height: 24px;
+
+  @media screen and (min-width: 768px) {
+  right: 24px;
+    }
+
+  @media screen and (max-width: 767px) {
+    filter: drop-shadow(var(--mob-shadow));
+  }
 }
 
 .icon-search {
@@ -32,6 +40,10 @@ Single-colored icons can be modified like so:
   left: 52px;
   width: 18px;
   height: 18px;
+
+  @media screen and (max-width: 767px) {
+    filter: drop-shadow(var(--mob-shadow));
+  }
 }
 
 .icon-menu-burger {
@@ -40,33 +52,65 @@ Single-colored icons can be modified like so:
   left: 16px;
   width: 20px;
   height: 15px;
+
+  @media screen and (max-width: 767px) {
+    filter: drop-shadow(var(--mob-shadow));
+  }
 }
 
+// Networks icons
 .icon-insta {
   width: 19px;
   height: 19px;
+
+  @media screen and (min-width: 768px) {
+  width: 16px;
+  height: 16px;
+  }
 }
 
 .icon-twitter {
   width: 20px;
   height: 16px;
+
+    @media screen and (min-width: 768px) {
+  width: 17px;
+  height: 14px;
+  }
 }
 
 .icon-snapchat {
   width: 19px;
   height: 18px;
+
+    @media screen and (min-width: 768px) {
+  width: 16px;
+  height: 15px;
+  }
 }
 
 .icon-facebook {
   width: 10px;
   height: 19px;
+
+    @media screen and (min-width: 768px) {
+  width: 8px;
+  height: 16px;
+  }
 }
 
 .icon-youtube {
   width: 21px;
   height: 15px;
+
+
+    @media screen and (min-width: 768px) {
+  width: 18px;
+  height: 13px;
+  }
 }
 
+//Sublist icons
 .icon-chevrondown {
   width: 1.625em;
 }
