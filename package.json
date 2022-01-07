@@ -6,7 +6,7 @@
   "homepage": "https://MaksVibe.github.io/pet-v",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /pet-v/"
   },
   "repository": {
     "type": "git",
