@@ -3,23 +3,67 @@
     <span>We deliver Worldwide</span>
     <span class="header__delivery-stores">
       <svg class="icon icon-Shape">
-        <use href="./images/sprite.svg#icon-Shape"></use>
-      </svg>Our stores</span>
+        <use href="./images/sprite.svg#icon-Shape"></use></svg
+      >Our stores
+    </span>
   </div>
-  <div class="container">
   <div class="header__container">
     <div class="header__mobile">
-    <svg class="icon icon-menu-burger">
-      <use href="./images/sprite.svg#icon-menu-burger"></use>
-    </svg>
-    <svg class="icon icon-search">
-      <use href="./images/sprite.svg#icon-search"></use>
-    </svg>
-  </div>
+      <svg class="icon icon-menu-burger">
+        <use href="./images/sprite.svg#icon-menu-burger"></use>
+      </svg>
+      <svg class="icon icon-search" id="searchBtn">
+        <use href="./images/sprite.svg#icon-search"></use>
+      </svg>
+    </div>
     <span class="header__logo">Aurora</span>
+    <div class="header__navSearch">
+      <form class="header__form">
+        <input
+          type="text"
+          class="header__input"
+          name="header__input"
+          id="header__input"
+          placeholder="What are you looking for?"
+        />
+        <button type="submit" class="header__form-btn">
+          <svg class="hero1_icon" width="16" height="16">
+            <use href="./images/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/">what's new</a></li>
+          <li class="header__nav-item"><a href="/">women</a></li>
+          <li class="header__nav-item"><a href="/">accessories</a></li>
+          <li class="header__nav-item"><a href="/">kids</a></li>
+          <li class="header__nav-item"><a href="/">beauty</a></li>
+          <li class="header__nav-item"><a href="/">outlet</a></li>
+          <li class="header__nav-item"><a href="/">stories</a></li>
+        </ul>
+      </nav>
+    </div>
     <svg class="icon icon-basket">
       <use href="./images/sprite.svg#icon-basket"></use>
     </svg>
   </div>
+
+  <!-- Mobile search-bar -->
+  <div class="searchBar visually-hidden" id="searchbar">
+    <form class="searchBar__form">
+      <input
+        type="text"
+        class="searchBar__input"
+        name="searchBar__input"
+        id="searchBar__input"
+        placeholder="What are you looking for?"
+      />
+      <button type="submit" class="searchBar__form-btn">
+        <svg class="hero1_icon" width="16" height="16">
+          <use href="./images/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
   </div>
 </header>
