@@ -22,7 +22,8 @@ body.show-modal .mobile-menu {
   transform: translate(-50%, -50%);
 }
 
-.mobile-menu {
+.mobile-menu,
+.sub-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,8 +54,6 @@ body.show-modal .mobile-menu {
     flex-direction: column;
     margin-right: auto;
     margin-bottom: 80px;
-    padding-left: 16px;
-    padding-right: 16px;
 
     width: 100%;
     text-transform: uppercase;
@@ -63,6 +62,8 @@ body.show-modal .mobile-menu {
   &__item {
     position: relative;
     padding-top: 17px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 14px;
     border-bottom: 1px solid var(--main-border);
   }
@@ -101,6 +102,39 @@ body.show-modal .mobile-menu {
   }
 }
 
+.sub-menu__item:last-child {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--main-border);
+
+  &::after {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    content: url(../images/chevrondown1.svg);
+    width: 7px;
+    height: 12px;
+    background-size: contain;
+
+    color: var(--second-text-btnbg);
+  }
+}
+
+.sub-menu__item:first-child {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  border-bottom: 1px solid var(--second-text-btnbg);
+
+  &::after {
+    display: none;
+  }
+}
+
 .close_btn::before {
   position: absolute;
   left: 16px;
@@ -110,6 +144,21 @@ body.show-modal .mobile-menu {
   color: var(--second-text-btnbg);
 }
 
-.mobile-menu a {
+.goback_btn::after {
+  position: absolute;
+  left: 16px;
+  top: 1.3em;
+
+  content: url(../images/chevrondown1.svg);
+  width: 7px;
+  height: 12px;
+  background-size: contain;
+
+  color: var(--second-text-btnbg);
+  transform: rotate(180deg);
+}
+
+.mobile-menu a,
+.sub-menu a {
   color: var(--second-text-btnbg);
 }

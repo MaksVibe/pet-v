@@ -4,3 +4,4 @@ import './scripts/refs';
 import './scripts/mob-searchbar';
 import './scripts/mob-menu';
 import './scripts/mob-submenu';
+import './scripts/mob-menu-sub';

@@ -1,3 +1,4 @@
+// FOOTER submenu toggle
 import refs from './refs';
 
 refs.navMenuLink.forEach(e => e.addEventListener('click', toggleModal));
