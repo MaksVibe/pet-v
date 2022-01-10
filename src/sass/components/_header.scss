@@ -30,13 +30,11 @@
 
   &:hover .header__form-btn,
   &:focus .header__form-btn,
-  &:hover .header__busket,
-  &:focus .header__busket,
   &__form:focus-within .icon-search,
-  &:hover .icon-menu-burger,
-  &:focus .icon-menu-burger,
-  &:hover .icon-search,
-  &:focus .icon-search {
+  &:hover .icon,
+  &:focus .icon,
+  &:hover .searchBar__form-btn,
+  &:focus .searchBar__form-btn {
     fill: var(--second-text-btnbg);
   }
 
@@ -183,7 +181,4 @@
   &__busket {
     fill: var(--main-bg-text);
   }
-}
-
-.close_search {
 }

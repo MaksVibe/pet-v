@@ -22,6 +22,21 @@ Single-colored icons can be modified like so:
   height: 16px;
 }
 
+.close_search {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 52px;
+  top: 22px;
+  background-color: transparent;
+  fill: var(--main-bg-text);
+}
+
+.close_search .icon {
+  width: 100%;
+  height: 100%;
+}
+
 .icon-basket {
   position: absolute;
   right: 16px;

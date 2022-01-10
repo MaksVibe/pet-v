@@ -1,7 +1,7 @@
 .searchBar {
   display: flex;
   justify-content: center;
-  padding: 0 16px;
+  padding: 0 16px 16px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -17,6 +17,7 @@
       right: 16px;
 
       background-color: transparent;
+      fill: var(--main-bg-text);
     }
   }
 
@@ -30,8 +31,7 @@
     font-weight: 500;
     line-height: calc(16 / 11);
     letter-spacing: 0.073em;
-    color: var(--main-bg-text);
-    background-color: var(--input-bg);
+    background-color: var(--second-bgc);
 
     &::-webkit-input-placeholder {
       color: var(--main-bg-text);
