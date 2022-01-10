@@ -34,7 +34,9 @@
   &:focus .header__busket,
   &__form:focus-within .icon-search,
   &:hover .icon-menu-burger,
-  &:focus .icon-menu-burger {
+  &:focus .icon-menu-burger,
+  &:hover .icon-search,
+  &:focus .icon-search {
     fill: var(--second-text-btnbg);
   }
 
@@ -181,4 +183,7 @@
   &__busket {
     fill: var(--main-bg-text);
   }
+}
+
+.close_search {
 }
