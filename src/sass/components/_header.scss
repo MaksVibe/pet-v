@@ -28,9 +28,10 @@
   }
 
   &:hover .header__form-btn,
-  &:focus .header__form-btn {
+  &:focus .header__form-btn,
+  &:hover .header__busket,
+  &:focus .header__busket {
     fill: var(--second-text-btnbg);
-    color: var(--second-text-btnbg);
   }
 
   &:hover .header__delivery,
@@ -135,6 +136,7 @@
       position: absolute;
       top: 16px;
       right: 16px;
+      fill: var(--main-bg-text);
 
       background-color: transparent;
     }
@@ -174,5 +176,9 @@
       color: var(--main-bg-text);
       text-transform: uppercase;
     }
+  }
+
+  &__busket {
+    fill: var(--main-bg-text);
   }
 }
