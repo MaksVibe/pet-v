@@ -32,7 +32,9 @@
   &:focus .header__form-btn,
   &:hover .header__busket,
   &:focus .header__busket,
-  &__form:focus-within .header__form-btn {
+  &__form:focus-within .icon-search,
+  &:hover .icon-menu-burger,
+  &:focus .icon-menu-burger {
     fill: var(--second-text-btnbg);
   }
 
@@ -92,10 +94,6 @@
     padding: 20px 16px 32px;
     margin: 0 auto;
 
-    // @media screen and (min-width: 768px) {
-    //   justify-content: center;
-    // }
-
     @media screen and (min-width: 768px) {
       padding-left: 24px;
       padding-right: 24px;
@@ -139,7 +137,6 @@
       position: absolute;
       top: 16px;
       right: 16px;
-      fill: var(--main-bg-text);
 
       background-color: transparent;
     }

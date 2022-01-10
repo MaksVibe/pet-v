@@ -43,9 +43,15 @@ Single-colored icons can be modified like so:
   left: 52px;
   width: 18px;
   height: 18px;
+  fill: var(--main-bg-text);
+
+  @media screen and (min-width: 768px) {
+    left: -16px;
+  }
 
   @media screen and (max-width: 767px) {
     filter: drop-shadow(var(--mob-shadow));
+    top: 20px;
   }
 }
 
@@ -55,6 +61,7 @@ Single-colored icons can be modified like so:
   left: 16px;
   width: 20px;
   height: 15px;
+  fill: var(--main-bg-text);
 
   @media screen and (max-width: 767px) {
     filter: drop-shadow(var(--mob-shadow));
