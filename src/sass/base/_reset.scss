@@ -41,7 +41,8 @@ textarea {
 input::-ms-clear {
   display: none;
 }
-button {
+button,
+a {
   cursor: pointer;
 }
 button::-moz-focus-inner {
@@ -70,7 +71,6 @@ h6 {
   font-weight: 400;
 }
 
-/* Скрытие элемента */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
