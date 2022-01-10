@@ -23,21 +23,24 @@
   }
 
   &:hover ::-webkit-input-placeholder,
-  &:focus ::-webkit-input-placeholder {
+  &:focus ::-webkit-input-placeholder,
+  &__form:focus-within ::-webkit-input-placeholder {
     color: var(--second-text-btnbg);
   }
 
   &:hover .header__form-btn,
   &:focus .header__form-btn,
   &:hover .header__busket,
-  &:focus .header__busket {
+  &:focus .header__busket,
+  &__form:focus-within .header__form-btn {
     fill: var(--second-text-btnbg);
   }
 
   &:hover .header__delivery,
   &:focus .header__delivery,
   &:hover .header__input,
-  &:focus .header__input {
+  &:focus .header__input,
+  &__form:focus-within .header__input {
     background-color: var(--second-bgc);
   }
 
@@ -151,7 +154,7 @@
     font-weight: 500;
     line-height: calc(16 / 11);
     letter-spacing: 0.073em;
-    color: var(--main-bg-text);
+    color: var(--second-text-btnbg);
     background-color: var(--input-bg);
 
     &::-webkit-input-placeholder {
